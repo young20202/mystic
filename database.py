@@ -14,7 +14,6 @@ class MyDB:
         self.host = host
         self.port = port
         self.user = user
-        self.pwd = pwd
         self.db = db
     
     # 서버와 연결하고 커서를 생성하는 함수 
@@ -24,7 +23,6 @@ class MyDB:
             host = self.host, 
             port = self.port, 
             user = self.user, 
-            password = self.pwd, 
             db = self.db
         )
         # 커서를 생성 (독립적)
